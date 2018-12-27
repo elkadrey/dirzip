@@ -30,9 +30,13 @@ var zipDir = {
 
 module.exports = {
     zip: function(dirPath, saveTo = "./temp/temp.zip")
-    {
+    {        
+        if(!dirPath || dirPath == "") 
+        {            
+            console.error("Directroy path is required !");
+            return false;
+        }
         var zip = new AdmZip();
-        
         zipDir.read(dirPath, (file) => {            
             if(file.isFile)
             {
@@ -41,7 +45,7 @@ module.exports = {
                 zip.writeZip(saveTo);
             }
         });
-        
+        return true;
     },
     unzip: function(filePath, extractTo = './temp/extracted')
     {
