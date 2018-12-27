@@ -1,0 +1,27 @@
+{
+  "name": "dirzip",
+  "version": "1.0.0",
+  "description": "Zip / Unzip entire directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elkadrey/dirzip.git"
+  },
+  "keywords": [
+    "Zip",
+    "Unzip",
+    "Directory"
+  ],
+  "author": "Ahmed Elkadrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elkadrey/dirzip/issues"
+  },
+  "homepage": "https://github.com/elkadrey/dirzip#readme",
+  "dependencies": {
+    "adm-zip": "^0.4.13"
+  }
+}
