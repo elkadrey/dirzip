@@ -47,10 +47,10 @@ module.exports = {
         });
         return true;
     },
-    unzip: function(filePath, extractTo = './temp/extracted')
+    unzip: function(filePath, extractTo = './temp/extracted', overwrite = false, callBack = null)
     {
         var zip = new AdmZip(filePath);
-        zip.extractAllTo(extractTo);
+        zip.extractAllToAsync(extractTo, overwrite, callBack);
     },    
     
 }
