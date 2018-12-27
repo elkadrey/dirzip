@@ -1,6 +1,6 @@
 {
   "name": "dirzip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zip / Unzip entire directory",
   "main": "index.js",
   "scripts": {
